@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza 菜单</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #ffecd2, #fcb69f);
+      color: #333;
+    }
+
+    header {
+      background: #d32f2f;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+
+    .item {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .item:hover {
+      transform: scale(1.05);
+    }
+
+    .item img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+
+    .item h3 {
+      margin: 10px 0;
+      color: #d32f2f;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #2e7d32;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🍕 Pizza 菜单 🍕</h1>
+    <p>欢迎光临！请选择您的披萨</p>
+  </header>
+
+  <section class="menu">
+    <div class="item">
+      <img src="https://i.ibb.co/3SthHgd/margherita.jpg" alt="玛格丽塔披萨">
+      <h3>玛格丽塔披萨</h3>
+      <p>经典番茄酱、马苏里拉奶酪</p>
+      <div class="price">¥50</div>
+    </div>
+
+    <div class="item">
+      <img src="https://i.ibb.co/5Mb6PcX/pepperoni.jpg" alt="意大利辣香肠披萨">
+      <h3>意大利辣香肠披萨</h3>
+      <p>丰富的辣香肠片、芝士</p>
+      <div class="price">¥65</div>
+    </div>
+
+    <div class="item">
+      <img src="https://i.ibb.co/zrfLyXm/veggie.jpg" alt="素食披萨">
+      <h3>素食披萨</h3>
+      <p>彩椒、洋葱、橄榄、蘑菇</p>
+      <div class="price">¥55</div>
+    </div>
+
+    <div class="item">
+      <img src="https://i.ibb.co/7k1YXN5/bbq.jpg" alt="烧烤鸡肉披萨">
+      <h3>烧烤鸡肉披萨</h3>
+      <p>烧烤酱、烤鸡肉、红洋葱</p>
+      <div class="price">¥70</div>
+    </div>
+  </section>
+
+</body>
+</html>
